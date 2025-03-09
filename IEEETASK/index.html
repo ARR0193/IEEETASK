@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="/images/icon2.png" alt="">
+        </div>
+        <div class="right">
+            <button>Get in touch</button>
+            <img src="/images/righticon.png" alt="">
+
+        </div>
+    </nav>
+
+
+    <h1>Ideas</h1>
+    <div class="ideas">
+        <div class="idea">
+            <img src="/images/ideas/idea1.png" alt="">
+
+            <p>Get your product featured priorites in order</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/6437726378b7535c10ad0fae_brand-naming.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>Get your product featured priorites in order</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+        <div class="idea">
+            <img src="https://cdn.prod.website-files.com/620970e0fc117e313fe36ebd/63d96390f8afafed2ae37ff8_rocketair-user-onboarding.jpg"
+                alt="" width="500px" height="800px">
+
+            <p>A new order of ideas for working on everyday</p>
+            <span id="date">12th Jan ,2025</span>
+        </div>
+    </div>
+</body>
+<script>
+    const accessKey = "YOUR_ACCESS_KEY";
+
+    fetch(`https://api.unsplash.com/photos/random?client_id=${accessKey}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.body.innerHTML = `<img src="${data.urls.regular}" alt="${data.alt_description}" width="500"/>`;
+        })
+        .catch(error => console.error("Error fetching image:", error));
+
+</script>
+
+</html>
